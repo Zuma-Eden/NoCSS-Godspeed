@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885338c8-2136-4c0c-b711-0681697aa6e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/src/components/layout/docs/docs.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/components/layout/docs/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/router/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/dashboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/components/imager/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/effect.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/other.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/godspeed/text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/home/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/home/home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/home/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/home/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/Hello.vue" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,36 +44,12 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/src/router/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dev/src/views/Home.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -81,11 +71,15 @@
       </list>
     </option>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/dev/package.json" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1908" />
     <option name="width" value="1941" />
     <option name="height" value="2112" />
   </component>
+  <component name="ProjectId" id="1uk2HEcEVX2az0CCtOoA1yaml75" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -162,35 +156,35 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Sunheight-Dev/Admin/dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/src/components" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Desktop\Git\祖玛乐园 Zuma-Eden\NoCSS-Godspeed\dev\src\components\layout\docs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\GitHub\祖玛乐园 Zuma-Eden\NoCSS-Godspeed\dev\src\components" />
+      <recent name="D:\Desktop\GitHub\祖玛乐园 Zuma-Eden\NoCSS-Godspeed\dev\src\views\home" />
+      <recent name="D:\Desktop\GitHub\祖玛乐园 Zuma-Eden\NoCSS-Godspeed\dev\src\plugins" />
       <recent name="D:\Desktop\Git\祖玛乐园 Zuma-Eden\NoCSS-Godspeed\dev\src" />
       <recent name="D:\Desktop\Git\祖玛乐园 Zuma-Eden\NoCSS-Godspeed\dev" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\GitHub\祖玛乐园 Zuma-Eden\NoCSS-Godspeed\dev\src\views\Home" />
+      <recent name="D:\Desktop\Git\祖玛乐园 Zuma-Eden\NoCSS-Godspeed\dev\src\components\layout\docs" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -203,6 +197,7 @@
       <updated>1625073399824</updated>
       <workItem from="1625073400919" duration="787000" />
       <workItem from="1625151038413" duration="4102000" />
+      <workItem from="1625195177900" duration="7956000" />
     </task>
     <servers />
   </component>
@@ -244,7 +239,18 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dev/package.json">

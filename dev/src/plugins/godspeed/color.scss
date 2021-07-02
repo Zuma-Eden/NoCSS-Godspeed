@@ -1,0 +1,42 @@
+$color-sheet:(
+    "red": #bf0000,
+    "pink": #e400b6,
+    "cyan": #00cce6,
+    "blue": #00a2ff,
+    "grey": #98a5b5,
+    "gold": #ffe093,
+    "green": #79f200,
+    "black": #4d5156,
+    "purple": #b100cf,
+    "orange": #e89200,
+    "catskill": #ebf1f5,
+);
+
+@each $key,$val in $color-sheet {
+  $lighted:lighten($val, 15%);
+  $darked:darken($val, 15%);
+
+  [#{$key}]:not([bg]){ color: #{$val};--color: #{$val}!important;}
+  [#{$key}][lighten]:not([bg]){ color: #{$lighted};--color: #{$lighted}!important }
+  [#{$key}][darken]:not([bg]){ color: #{$darked};--color: #{$darked}!important }
+  [#{$key}][bg]{
+    background-color: #{$val};
+    --background-color: #{$val}!important;
+    @if lightness($val) > 65% { color: black;--color: black!important;--text-shadow: 0 0 2px rgba(255,255,255,.5); }
+    @else { color: white;--color: white!important;--text-shadow: 0 0 2px rgba(0,0,0,.6) }
+  }
+  [#{$key}][bg][lighten]{
+    background-color: $lighted;
+    --background-color: $lighted!important;
+    @if lightness($lighted) > 53%{
+      color: black;
+      --color: black!important;
+      --text-shadow: 0 0 2px rgba(255,255,255,.5);
+    }
+  }
+  [#{$key}][bg][darken]{
+    background-color:$darked;
+    --background-color:$darked!important;
+  }
+}
+

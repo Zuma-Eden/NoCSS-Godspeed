@@ -1,0 +1,98 @@
+$grades: (
+        xs: 1,
+        sm: 2,
+        md: 3,
+        lg: 4,
+        xl: 5
+);
+// 段位尺寸
+@each $key, $val in $grades {
+  [pt-#{$key}]{ --xpt:#{$val*$val}; }
+  [pr-#{$key}]{ --xpr:#{$val*$val}; }
+  [pb-#{$key}]{ --xpb:#{$val*$val}; }
+  [pl-#{$key}]{ --xpl:#{$val*$val}; }
+
+  [px-#{$key}]{ --xpl:#{$val*$val};--xpr:#{$val*$val}; }
+  [py-#{$key}]{ --xpt:#{$val*$val};--xpb:#{$val*$val}; }
+  [pa-#{$key}]{ --xpt:#{$val*$val};--xpr:#{$val*$val};--xpb:#{$val*$val};--xpl:#{$val*$val};  }
+
+  [mt-#{$key}]{ --xmt:#{$val*$val*$val}; }
+  [mr-#{$key}]{ --xmr:#{$val*$val*$val}; }
+  [mb-#{$key}]{ --xmb:#{$val*$val*$val}; }
+  [ml-#{$key}]{ --xml:#{$val*$val*$val}; }
+
+  [mx-#{$key}]{ --xml:#{$val*$val*$val};--xmr:#{$val*$val*$val}; }
+  [my-#{$key}]{ --xmt:#{$val*$val*$val};--xmb:#{$val*$val*$val}; }
+  [ma-#{$key}]{ --xmt:#{$val*$val*$val};--xmr:#{$val*$val*$val};--xmb:#{$val*$val*$val};--xml:#{$val*$val*$val}; }
+
+  [wd-#{$key}]{ --xwd:#{$val*$val};--wd:0 }
+  [ht-#{$key}]{ --xht:#{$val*$val};--ht:0 }
+}
+// 精细尺寸
+@for $i from 1 through 25 {
+  // 内边距
+  [pt-#{$i}]{ --pt:#{$i}; }
+  [pr-#{$i}]{ --pr:#{$i}; }
+  [pb-#{$i}]{ --pb:#{$i}; }
+  [pl-#{$i}]{ --pl:#{$i}; }
+  [px-#{$i}]{ --pl:#{$i};--pr:#{$i}; }
+  [py-#{$i}]{ --pt:#{$i};--pb:#{$i}; }
+  [pa-#{$i}]{ --pt:#{$i};--pr:#{$i};--pb:#{$i};--pl:#{$i}; }
+  // 外边距
+  [mt-#{$i}]{ --mt:#{$i}; }
+  [mr-#{$i}]{ --mr:#{$i}; }
+  [mb-#{$i}]{ --mb:#{$i}; }
+  [ml-#{$i}]{ --ml:#{$i}; }
+  [mx-#{$i}]{ --ml:#{$i};--mr:#{$i}; }
+  [my-#{$i}]{ --mt:#{$i};--mb:#{$i}; }
+  [ma-#{$i}]{ --mt:#{$i};--mr:#{$i};--mb:#{$i};--ml:#{$i}; }
+  // 宽高尺寸
+  [wd-#{$i}]{ --wd:#{$i}; }
+  [ht-#{$i}]{ --ht:#{$i}; }
+}
+[mx-auto]{
+  display: block;
+  margin-left: auto;margin-right: auto;
+}
+
+[block],[row]{
+  display: block;
+}
+[inline-block],[inline],[col]{
+  display: inline-block;
+}
+[relative]{
+  position: relative;
+}
+[z-index-1]{
+  z-index: 1;position: relative;
+}
+[z-index-2]{
+  z-index: 2;position: relative;
+}
+[z-index-3]{
+  z-index: 3;position: relative;
+}
+[z-index-4]{
+  z-index: 4;position: relative;
+}
+[z-index-5]{
+  z-index: 5;position: relative;
+}
+
+
+
+[jc]:not([flex]){
+  text-align: center;
+}
+[je]:not([flex]){
+  text-align: right;
+}
+[ac]:not([flex]){
+  --lh:1;
+}
+[ae]:not([flex]){
+  --lh:1.97;
+}
+
+

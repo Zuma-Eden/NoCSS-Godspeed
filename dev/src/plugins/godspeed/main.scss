@@ -1,0 +1,57 @@
+*{
+  --pt:0; --pr:0; --pb:0; --pl:0;
+  --xpt:0; --xpr:0; --xpb:0; --xpl:0;
+  padding:
+          calc( var(--xpt) * 2px + var(--pt) * 1px )
+          calc( var(--xpr) * 2px + var(--pr) * 1px )
+          calc( var(--xpb) * 2px + var(--pb) * 1px )
+          calc( var(--xpl) * 2px + var(--pl) * 1px );
+
+  --mt:0; --mr:0; --mb:0; --ml:0;
+  --xmt:0; --xmr:0; --xmb:0; --xml:0;
+  margin:
+          calc( var(--xmt) * 2px + var(--mt) * 1px )
+          calc( var(--xmr) * 2px + var(--mr) * 1px )
+          calc( var(--xmb) * 2px + var(--mb) * 1px )
+          calc( var(--xml) * 2px + var(--ml) * 1px );
+
+  --wd:false;--ht:false;
+  --xwd:0;--xht:0;
+  width:  calc( 12px + var(--xwd) * 10px + var(--wd) * 2px);
+  height: calc( 12px + var(--xht) * 10px + var(--ht) * 2px);
+
+  --lh:false;
+  line-height:
+          calc( var(--lh) * ( 9px + var(--xht) * 10px + var(--ht) * 2px) );
+
+  --nx:0; --ny:0;
+  transform: translateX(var(--nx)) translateY(var(--ny));
+}
+
+[nu-xs]{ --ny:-.5px}
+[nu-sm]{ --ny:-1px}
+[nu-md]{ --ny:-1.5px}
+[nu-lg]{ --ny:-2px}
+[nu-xl]{ --ny:-2.5px}
+
+[nd-xs]{ --ny:.5px}
+[nd-sm]{ --ny:1px}
+[nd-md]{ --ny:1.5px}
+[nd-lg]{ --ny:2px}
+[nd-xl]{ --ny:2.5px}
+
+[nr-xs]{ --nx:.5px}
+[nr-sm]{ --nx:1px}
+[nr-md]{ --nx:1.5px}
+[nr-lg]{ --nx:2px}
+[nr-xl]{ --nx:2.5px}
+
+[nl-xs]{ --nx:-.5px}
+[nl-sm]{ --nx:-1px}
+[nl-md]{ --nx:-1.5px}
+[nl-lg]{ --nx:-2px}
+[nl-xl]{ --nx:-2.5px}
+
+@import "box.scss";
+@import "text.scss";
+@import "grid.scss";

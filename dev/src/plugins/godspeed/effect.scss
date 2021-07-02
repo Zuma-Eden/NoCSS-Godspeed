@@ -1,0 +1,182 @@
+[tag-bar]{
+  display: block;
+  position: relative;
+  padding-left: 28px!important;
+  &::before{
+    position: absolute;left: 0;top: calc(50% - 4px);
+    content: '';display: inline-block;width: 20px;height: 8px;background-color: #bb1c1c;
+    vertical-align: center;
+  }
+}
+[tag-dash]{
+  position: relative;
+  --color:rgba(0,0,0,.7);
+  &::before{
+    position: absolute;left: -1px;top: calc(50% - .35em);content: '';display: inline-block;
+    width: .5px;height: .3em;background-color: var(--color);
+  }
+  &::after{
+    position: absolute;left: -1px;top: calc(100% - .65em);content: '';display: inline-block;
+    width: .5px;height: .3em;background-color: var(--color);
+  }
+}
+[round]{
+  --border-radius: 3000px!important;
+  border-radius: var(--border-radius);
+}
+[bevel]{
+  --border-radius: 3px!important;
+  border-radius: var(--border-radius);
+}
+[pointer]{
+  position: relative;
+  cursor: pointer;
+  &:hover{
+    &::after{
+      border-radius: inherit;
+      position: absolute;content: '';
+      left: -.5px;top: -.5px;
+      width: calc(100% + 1px);height: calc(100% + 1px);
+      border: .5px solid rgba(0,0,0,.1);
+    }
+  }
+  &:active{
+    &::after{
+      background-color: rgba(250,250,250,.2);
+    }
+  }
+}
+[fill]{
+  --width: 100%;--height: 100%;
+  width: var(--width);
+  height: var(--height);
+}
+//状态属性
+[quote]{
+  background-color: #f5f9fb;
+}
+[success],[caution],[query],[warning],[error]{
+  line-height: 1.5;
+  font-family: 'mew-ico';
+  position: relative;
+  border-radius: 4px;
+  padding: 0.6em 1.53em 0.75em 3.85em;
+  &::before{
+    display: inline-block;content: '';
+    left: 1.1em;top: calc(50% - 0.66em);
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-size: inherit;
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+  }
+}
+[success]{
+  color: #005b40;
+  background-color: #f4fcf2;
+  &::before {
+    font-size: 1.3em;
+    content: "\e929";
+  }
+}
+[caution],[warning]{
+  color: #00538d;
+  background-color: #e6f4ff;
+}
+[caution]{
+  &::before {
+    font-size: 1.45em;
+    top: calc(50% - 0.76em);
+    left: .95em;
+    content: "\e926";
+  }
+}
+[warning]{
+  &::before {
+    top: calc(50% - 0.76em);
+    left: 1.4em;
+    background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cGF0aCBkPSJNNDguMDA4NSAzOS43NTg5TDI5LjE4NDMgNy4wMDQ0QzI4LjM5MTUgNC42ODIwOCAyNS44NzkxIDMuNDQ1NjUgMjMuNTY0OSA0LjI0MTI3QzIyLjI2ODUgNC42ODc0NSAyMS4yNTYxIDUuNzAzNDcgMjAuODExNCA3LjAwNDRMMS45OTI1NSAzOS43NTg5Qy0wLjMyMTY0MyA0My43NTMgMS41NDc5MiA0NyA2LjE3NjMxIDQ3SDQzLjgxOTRDNDguNDQ3OCA0NyA1MC4zMjI3IDQzLjc1ODQgNDguMDA4NSAzOS43NTg5VjM5Ljc1ODlaTTIyLjQxMzIgMTYuMjk5MUMyMy44MDA2IDE0Ljg2MzggMjYuMDg4IDE0LjgzMTUgMjcuNTEyOSAxNi4yMjkyQzI3LjUzOTcgMTYuMjUwNyAyNy41NjEyIDE2LjI3NzYgMjcuNTgyNiAxNi4yOTkxQzI4LjI2ODMgMTcuMDQwOSAyOC42Mzc5IDE4LjAxOTMgMjguNjA1OCAxOS4wM0MyOC42MDU4IDE5Ljk1NDYgMjcuMTc1NSAyNi44NTE3IDI2LjczNjIgMzEuODcyNkgyMy4zMzQ1QzIyLjkyNzQgMjYuODUxNyAyMS4zOTUzIDE5Ljk1NDYgMjEuMzk1MyAxOS4wM0MyMS4zNjg2IDE4LjAxOTMgMjEuNzMyOCAxNy4wNDA5IDIyLjQxMzIgMTYuMjk5MVYxNi4yOTkxWk0yNy41NTA0IDQwLjIwNUMyNi4xMjAxIDQxLjU2NTEgMjMuODc1NiA0MS41NjUxIDIyLjQ0NTMgNDAuMjA1QzIxLjAzNjQgMzguNzkxMiAyMS4wMzY0IDM2LjQ5NTggMjIuNDUwNyAzNS4wODczQzIzLjg1OTUgMzMuNjczNSAyNi4xNDY5IDMzLjY3MzUgMjcuNTUwNCAzNS4wOTI3QzI4Ljk1OTMgMzYuNTAxMiAyOC45NTkzIDM4Ljc5MTIgMjcuNTUwNCA0MC4yMDVaIiBmaWxsPSIjMDA1MzhEIi8+DQo8L3N2Zz4NCg==');
+  }
+}
+[query]{
+   color: #680068;
+   background-color: #fff2ff;
+   &::before {
+     top:calc(50% - 0.75em);
+     left: 1em;
+     font-size: 1.35em;
+     content: "\e928";
+   }
+}
+[error]{
+  color: #db0000;
+  background-color: #ffe1e1;
+  &::before {
+    left: 1.2em;
+    font-size: 1.2em;
+    content: "\e927";
+  }
+}
+//调试属性
+[border],[ba],[bt],[br],[bb],[bl]{
+  --color:#e2e2e2;
+}
+[border],[ba]{
+  --border:.5px solid var(--color)!important;
+  border:var(--border)!important;
+}
+[bt]{
+  --border-top:.5px solid var(--color)!important;
+  border-top: var(--border-top)!important;
+}
+[br]{
+  --border-right:.5px solid var(--color)!important;
+  border-right:var(--border-right)!important;
+}
+[bb]{
+  --border-bottom:.5px solid var(--color)!important;
+  border-bottom:var(--border-bottom)!important;
+}
+[bl]{
+  --border-left:.5px solid var(--color)!important;
+  border-left:var(--border-left)!important;
+}
+
+[foo]{
+  background-color: rgba(0,210,236,.3)
+}
+[bar]{
+  background-color:rgba(255,20,100,.3)
+}
+[baz]{
+  background-color: rgba(255,190,100,.3)
+}
+[foo][bar]{
+  background-color: rgba(160,0,0,1);color: white;
+}
+[foo][baz]{
+  //background-color: #263238;color: white;
+  color: white;
+  background: linear-gradient(-45deg, #C90000, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: foobaz 15s ease infinite;
+  @keyframes foobaz {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+//其他属性
+[hump]{
+  color: #fff;
+  text-shadow: 0 .5px 0 rgb(150,150,150), 0 1px 0 rgb(145,145,145), 0 1.5px 0 rgb(140,140,140), 0 2px 0 rgb(135,135,135), 0 2.5px 0 rgb(130,130,130), 0 3px 0 rgb(125,125,125), 0 3.5px 0 rgb(120,120,120), 0 4px 0 rgb(115,115,115), 0 4.5px 0 rgb(110,110,110), 0 5px 0 rgb(105,105,105), 0 5.5px 0 rgb(105,105,105), 0 6px 0 rgb(100,100,100), 0 6.5px 0 rgb(95,95,95), 0 7px 0 rgb(90,90,90),0 7.5px 0 rgb(70,70,70),0 8px 0 rgb(60,60,60),0 8.5px 0 rgb(55,55,55), 0 9px 5px rgb(30,30,30);
+}
+
+

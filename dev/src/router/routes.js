@@ -1,12 +1,17 @@
-import Home from '@/views/Home.vue'
+import home from '@/views/home'
+import Hello from '@/views/Hello.vue'
 import docs from '@/components/layout/docs'
 
 export default [
     {
         path: '/',
         name: 'Home',
-        component: Home,
-        meta:{ title: 'Godspeed' }
+        component: home,
+    },
+    {
+        path: '/hello',
+        name: 'Hello',
+        component: Hello,
     },
     {
         path: '/docs',
@@ -17,7 +22,6 @@ export default [
                 path: '',
                 name: 'dashboard',
                 component: () => import('@/views/dashboard'),
-                meta:{ title: 'Godspeed' }
             },
         ]
     }

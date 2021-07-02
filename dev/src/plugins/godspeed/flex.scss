@@ -1,0 +1,41 @@
+[flex]{
+  display: flex;align-items: flex-start;justify-content: flex-start;
+}
+[flex][reverse]{
+  flex-direction: row-reverse;
+}
+[flex][column]{
+  flex-direction: column
+}
+[flex][column][reverse]{
+  flex-direction: column-reverse;
+}
+[flex][wrap]{
+  flex-wrap: wrap;
+}
+[flex][js]{
+  justify-content: flex-start;
+}
+[flex][je]{
+  justify-content: flex-end;
+}
+[flex][jc]{
+  justify-content: center;
+}
+[flex][jsb]{
+  justify-content: space-between;
+}
+[flex][jsa]{
+  justify-content: space-around;
+}
+[flex][ae] {
+  align-items: flex-end;
+}
+[flex][ac]{
+  align-items: center;
+}
+[flex][as]{
+  align-items: stretch;
+}
+
+

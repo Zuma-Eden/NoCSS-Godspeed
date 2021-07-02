@@ -1,0 +1,71 @@
+//字体大小
+//xs-fs 12 14 16 18 20
+//sm-fs 22 24 26 28 30
+//md-fs 32 34 36 38 40
+//lg-fs 42 44 46 48 50
+//xl-fs 52 54 56 58 60
+*{
+  --xfs:0;--fs:false;
+  font-size: calc( var(--xfs) * 1px + var(--fs) * 1px );
+}
+[xs]{
+  --xfs:12;--fs:0;
+}
+[sm]{
+  --xfs:15;--fs:0;
+}
+[md]{
+  --xfs:19;--fs:0;
+}
+[lg]{
+  --xfs:24;--fs:0;
+}
+[xl]{
+  --xfs:30;--fs:0;
+}
+@for $i from 1 through 25 {
+  [fs-#{$i}]{
+    --fs:#{$i};
+  }
+}
+
+
+// 字间距属性-BEGIN-
+*{
+  --xls:0;--ls:false;
+  letter-spacing: calc( var(--xls) * 1px + var(--ls) * .5px );
+}
+[ls-xs] {
+  --xls:1;--ls:0;
+}
+[ls-sm] {
+  --xls:2;--ls:0;
+}
+[ls-md] {
+  --xls:4;--ls:0;
+}
+[ls-lg] {
+  --xls:8;--ls:0;
+}
+[ls-xl] {
+  --xls:16;--ls:0;
+}
+@for $i from 1 through 25 {
+  [ls-#{$i}]{
+    --ls:#{$i};
+  }
+}
+// 字间距属性-END-
+
+[bold] {
+  --font-weight: bold !important;
+  font-weight: var(--font-weight)
+}
+
+[ellipsis] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
