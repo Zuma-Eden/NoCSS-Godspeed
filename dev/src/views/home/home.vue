@@ -2,6 +2,9 @@
     <div class="home">
         <imager :src="img"/>
         <i class="firefly" v-for="n in 15"></i>
+
+        <div red bg xl bold>color and font</div>
+
     </div>
 </template>
 
